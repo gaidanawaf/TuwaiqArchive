@@ -17,14 +17,14 @@ const ProjectCard = ({ project }) => {
         <button
           onClick={() => setIsFavorited(!isFavorited)}
           className="absolute top-2 right-2 bg-white p-1 rounded-full shadow"
-          aria-label="أضف إلى المفضلة"
+          aria-label=" المفضلة"
         >
           <span className={`text-xl ${isFavorited ? 'text-yellow-500' : 'text-gray-400'}`}>
             {isFavorited ? '★' : '☆'}
           </span>
         </button>
       </div>
-
+      
       <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
       <p className="text-gray-600 text-sm mb-2">{project.description}</p>
 

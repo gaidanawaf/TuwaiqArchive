@@ -4,12 +4,11 @@ const FilterBar = ({ search, setSearch }) => {
       <div className="flex flex-row-reverse items-center justify-between mb-6">
         <div className="flex flex-col items-start">
          
-          <div className="flex space-x-reverse space-x-6">
-           
-            <button className="text-gray-600 hover:text-black ">الكل</button>
-            <button className="text-gray-600 hover:text-black">تطوير مواقع </button>
-            <button className="text-gray-600 hover:text-black">تطوير الألعاب</button>
-            <button className="text-gray-600 hover:text-black"> تجربة المستخدم</button>
+          <div className="flex flex-row-reverse gap-4">
+            <button className="text-gray-600   hover:text-blue-600">الكل</button>
+            <button className="text-gray-600   hover:text-blue-600">تطوير مواقع </button>
+            <button className="text-gray-600   hover:text-blue-600">تطوير الألعاب</button>
+            <button className="text-gray-600   hover:text-blue-600"> تجربة المستخدم</button>
           </div>
         </div>
   

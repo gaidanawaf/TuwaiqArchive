@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {},
   },
+  fontFamily:  {
+    tajawal: ['Tajawal', 'sans-serif'],
+  },
   plugins: [],
 }
 
