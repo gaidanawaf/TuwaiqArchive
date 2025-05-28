@@ -1,5 +1,6 @@
 import React from 'react';
 import {  FaXTwitter, FaYoutube,} from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
     <div className="flex gap-4  font-bold text-indigo-800">
       <a href="https://tuwaiq.edu.sa/terms" className="hover:text-purple-700 transition"> الشروط والأحكام</a>
       <a href="https://tuwaiq.edu.sa/about" className="hover:text-purple-700 transition">حول الأكاديمية</a>
-      <a href="#" className="hover:text-purple-700 transition">شارك مشروعك </a>
+      <Link to="/submit" className="hover:text-purple-700 transition">شارك مشروعك </Link>
     </div>
 <div className=" ml-auto flex justify-start "></div>
     <div className=" flex gap-3  ml-4">
