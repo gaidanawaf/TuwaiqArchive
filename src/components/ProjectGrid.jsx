@@ -3,13 +3,6 @@ import ProjectCard from './ProjectCard';
 
 
 const ProjectGrid = ({ projects }) => {
-  
-if (!projects || projects == []){
-  return <>
- no data found
- 
-  </>
-}
 
 return (
   <>

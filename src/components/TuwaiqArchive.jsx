@@ -89,45 +89,18 @@ const projects = [
 ];
 
 const TuwaiqArchive = () => {
+
   const [search, setSearch] = useState("");
   const [filteredProjects, setFilteredProjects] = useState([]); 
-  const [data,setData] = useState([]);
+ 
 
   
- /* useEffect(() => {
+  useEffect(() => {
     setFilteredProjects(projects.filter((project) =>
     project.title.includes(search)
     )
 )
-  }, [search]); */
-
-  const fetchData = () => {
-      fetch("http://localhost:5186/api/archive/get").then(res => {
-        if (res.ok){
-          return res.json()
-        }
-      }).then(data => setData(data));
-  }
-
-   const fetchData1 = () => {
-      fetch("http://localhost:5186/api/archive/create",{
-        method:"post",
-        body:{
-          name:"test"
-        }
-      })
-      .then(res => {
-        if (res.ok){
-          return res.json()
-        }
-      }).then(data => setData(data));
-  }
-
-  useEffect(() => {
-
-    fetchData();
-
-  },[])
+  }, [search]);
   
 
   return (
@@ -135,9 +108,10 @@ const TuwaiqArchive = () => {
       <Header />
       <HeroSection />
       <FilterBar search={search} setSearch={setSearch} />
-      <ProjectGrid projects={data} />
+      <ProjectGrid projects={filteredProjects} />
     </div>
   );
 };
 
 export default TuwaiqArchive;
+
